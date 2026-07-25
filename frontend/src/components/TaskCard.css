@@ -1,0 +1,250 @@
+/* ==========================
+          Task List
+========================== */
+
+.task-list{
+
+    width:80%;
+
+    margin:50px auto;
+
+}
+
+.task-card{
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px rgba(139,92,246,.10);
+
+}
+
+.task-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 35px rgba(168,85,247,.25);
+
+}
+
+.task-card h3{
+
+    font-size:28px;
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.task-card p{
+
+    color:#CFCFCF;
+
+    margin:8px 0;
+
+    font-size:17px;
+
+}
+
+/* ==========================
+        STATUS BADGES
+========================== */
+
+.status{
+
+    display:inline-block;
+
+    margin-top:12px;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+}
+
+
+/* ==========================
+        Status Badge
+========================== */
+
+.status-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 20px;
+
+    margin-top:15px;
+
+    border-radius:999px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    transition:.3s;
+
+}
+
+/* Pending */
+
+.status-badge.Pending{
+
+    background:rgba(250,204,21,.15);
+
+    color:#FACC15;
+
+    border:1px solid rgba(250,204,21,.3);
+
+}
+
+/* Completed */
+
+.status-badge.Completed{
+
+    background:rgba(34,197,94,.15);
+
+    color:#22C55E;
+
+    border:1px solid rgba(34,197,94,.3);
+
+}
+
+/* In Progress */
+
+.status-badge.In-Progress{
+
+    background:rgba(59,130,246,.15);
+
+    color:#3B82F6;
+
+    border:1px solid rgba(59,130,246,.3);
+
+}
+.status-badge:hover{
+
+    transform:scale(1.05);
+
+}
+.task-title{
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+    letter-spacing:1px;
+
+}
+
+.task-description{
+
+    opacity:.85;
+
+    margin-bottom:18px;
+
+    font-size:17px;
+
+}
+
+.task-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+.edit-btn,
+.delete-btn{
+
+    transition:.3s;
+
+}
+
+.edit-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(37,99,235,.45);
+
+}
+
+.delete-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(239,68,68,.45);
+
+}
+
+.task-card{
+
+    animation:fadeUp .5s ease;
+    
+
+}
+.task-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+
+    }
+    
+
+}
+.task-priority,
+.task-date{
+
+    margin-top:8px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#E5E7EB;
+
+}

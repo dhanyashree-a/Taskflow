@@ -1,0 +1,264 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:"Segoe UI",sans-serif;
+}
+
+.register-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+        -45deg,
+        #0F0C29,
+        #302B63,
+        #24243E,
+        #1A103D
+    );
+
+    background-size:400% 400%;
+
+    animation:gradientMove 12s ease infinite;
+
+}
+
+.register-card{
+
+    width:450px;
+
+    padding:50px 45px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.45),
+        0 0 35px rgba(139,92,246,.30);
+
+    text-align:center;
+
+    animation:fadeUp .8s ease;
+
+    transition:.4s;
+
+}
+
+.register-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.register-card h1{
+
+    color:white;
+
+    font-size:48px;
+
+    margin:0;
+
+}
+
+.register-card p{
+
+    color:#C4B5FD;
+
+    margin-top:10px;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+}
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:22px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:15px 48px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#20202A;
+
+    color:white;
+
+    font-size:15px;
+
+    box-sizing:border-box;
+
+    transition:.3s;
+
+}
+
+.input-box input:hover{
+
+    background:#262635;
+
+}
+
+.input-box input:focus{
+
+    outline:none;
+
+    box-shadow:0 0 12px #8B5CF6;
+
+}
+
+.icon{
+
+    position:absolute;
+
+    left:16px;
+
+    top:16px;
+
+    color:#A78BFA;
+
+}
+
+.eye{
+
+    position:absolute;
+
+    right:16px;
+
+    top:16px;
+
+    color:#A78BFA;
+
+    cursor:pointer;
+
+}
+
+.register-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    background:linear-gradient(
+        90deg,
+        #7C3AED,
+        #A855F7
+    );
+
+    transition:.3s;
+
+    box-shadow:
+        0 10px 25px rgba(168,85,247,.35);
+
+}
+
+.register-btn:hover{
+
+    transform:
+        translateY(-3px)
+        scale(1.02);
+
+    background:linear-gradient(
+        90deg,
+        #6D28D9,
+        #9333EA
+    );
+
+}
+
+.login-link{
+
+    margin-top:25px;
+
+    color:#D8B4FE;
+
+}
+
+.login-link a{
+
+    color:#C084FC;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+}
+
+.login-link a:hover{
+
+    color:white;
+
+    text-decoration:underline;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes gradientMove{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
